@@ -173,8 +173,7 @@ function Route(){
       
       <div className={`${"main-container"} ${(isCopied || isMenuShown) && "active"}`}>
         <div className='header-title'>
-          <img alt='logo' className='logo' src={logo} style={{height: window.innerHeight/3, objectFit: 'cover'}} />
-          <h1 className='title'>YAŞAR ÜNİVERSİTESİ IEEE TOPLULUĞU</h1>
+          <img alt='logo' className='logo' src={logo} style={{height: window.innerHeight/2, marginBottom: '-40%', objectFit: 'cover'}} />
           <h3 className='views'>Ziyaretçi: {views}</h3>
         </div>
         <div className='all-links'>
@@ -184,7 +183,6 @@ function Route(){
           <LinkToNavigate title='Instagram' link='https://www.instagram.com/yu.muhendisliktoplulugu/'/>
 
           <LinkToNavigate title='Linkedin' link='https://www.linkedin.com/company/ieee-ya%C5%9Far-%C3%B6%C4%9Frenci-kolu/about/'/>
-
           
           <LinkToNavigate title='Youtube' link='https://www.youtube.com/channel/UCgj31r8y7gOfyDh0mGJKQqQ'/>
 

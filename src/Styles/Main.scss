@@ -27,7 +27,7 @@
     }
 }
 .title{
-    color: #ffffff;
+    color: white;
     font-size: .9rem;
     font-weight: bold;
     margin-top: 10px;
@@ -76,7 +76,7 @@
             transition: all .2s ease-in-out; 
             &:hover{
                 background-color: white;
-                color: #25296b;
+                color: black;
                 transform: scale(1.1);
 
             }
@@ -87,7 +87,7 @@
 
 .modal{
     margin: 0;
-    background-color: white;
+    background-color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,30 +110,7 @@
     display: flex;
     justify-self: center;
     justify-content: center;
-    animation-name: blink;
-    animation: blink 1.5s ease-in-out infinite alternate;
-}
-@keyframes blink {
-    0% {
-        box-shadow: 0 0 30px lightblue;
-    }
-    50% {
-        box-shadow: 0 0 50px lightblue;
-    }
-    100% {
-        box-shadow: 0 0 30px lightblue;
-    }
-}
-@-webkit-keyframes blink {
-    0% {
-        box-shadow: 0 0 30px lightblue;
-    }
-    50% {
-        box-shadow: 0 0 50px lightblue; 
-    }
-    100% {
-        box-shadow: 0 0 30px lightblue;
-    }
+
 }
 
 .loader-container {
