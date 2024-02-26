@@ -88,7 +88,7 @@ function Route(){
   const CopiedAlert = () => {
     return(
       <div ref={searchRef}  className={`${"modal"} ${isCopied && "active"}`}>
-        <div style={{width: 300, height: '100%', textAlign: 'center', alignItems: 'center', color: 'black'}}>
+        <div style={{width: 300, height: '100%', textAlign: 'center', alignItems: 'center', color: 'white'}}>
           <MdClose className='close-btn' onClick={()=>setIsCopied(false)} size={20}/>
           <div>Panoya Kopyalandı</div>
         </div>
@@ -181,6 +181,8 @@ function Route(){
         <div className='all-links'>
           
           <LinkToNavigate title='Topluluk Kayıt Formu' link='https://forms.gle/BRR8Ur1Tqks8vNgk8'/>
+
+          <LinkToNavigate title='Tanışma Etkinliği Kayıt Formu' link='https://forms.gle/VpLyuaEi7Umoyp797'/>
 
           <LinkToNavigate title='Instagram' link='https://www.instagram.com/yu.muhendisliktoplulugu/'/>
 

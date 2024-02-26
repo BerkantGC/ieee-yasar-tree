@@ -19,7 +19,7 @@ const Communicate = () => {
                     <BackButton navigate={navigate}/>
             </div>
                 <h1 style={{fontSize: 35, fontWeight: 'bold'}}>BİZİMLE İLETİŞİME GEÇ</h1>
-                <div className="each-comm" style={{cursor: 'pointer'}} onClick={()=>window.location='https://discord.gg/9DjpAx9y'}>
+                <div className="each-comm" style={{cursor: 'pointer'}} onClick={()=>window.location='https://discord.gg/unRHHm7x'}>
                     <p>DISCORD</p>
                     <BsDiscord size={30}/>
                 </div>
