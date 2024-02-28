@@ -33,11 +33,12 @@ const LinkToShare = (props) => {
   const Logo = props.Platform;
 
   return(
-    <a href={props.link}>
-            <Logo size="30" color='white'></Logo>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <Logo size="30" color='white'></Logo>
     </a>
   )
 }
+
 function Route(){
   const [views, setViews] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -87,7 +88,7 @@ function Route(){
   const CopiedAlert = () => {
     return(
       <div ref={searchRef}  className={`${"modal"} ${isCopied && "active"}`}>
-        <div style={{width: 300, height: '100%', textAlign: 'center', alignItems: 'center', color: 'black'}}>
+        <div style={{width: 300, height: '100%', textAlign: 'center', alignItems: 'center', color: 'white'}}>
           <MdClose className='close-btn' onClick={()=>setIsCopied(false)} size={20}/>
           <div>Panoya Kopyalandı</div>
         </div>
@@ -142,7 +143,8 @@ function Route(){
   
   const wpLink = "whatsapp://send?text=" + window.location.href;
   const twitterLink = "https://twitter.com/intent/tweet?text=Check%20out%20this%20Linktree!%20-%20" + window.location.href;
-  const linkedinLink = "https://www.linkedin.com/sharing/share-offsite/?url=" + window.location.href;
+  const linkedinLink = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent('https://ieee-yasar.netlify.app');
+  
 
   const ShareLinks = [
     {
@@ -195,7 +197,6 @@ function Route(){
         </div>
 
         <div className='share-btn'>
-
           {ShareLinks.map(item => <LinkToShare link={item.link} Platform={item.Platform} />)}
 
           <FiCopy onClick={copyToClickboard} style={{cursor: 'pointer'}} size="30" color='white'></FiCopy>
