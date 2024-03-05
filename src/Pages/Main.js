@@ -182,7 +182,7 @@ function Route(){
           
           <LinkToNavigate title='Topluluk Kayıt Formu' link='https://forms.gle/BRR8Ur1Tqks8vNgk8'/>
 
-          <LinkToNavigate title='Tanışma Etkinliği Kayıt Formu' link='https://forms.gle/VpLyuaEi7Umoyp797'/>
+          <LinkToNavigate title='IEEE Yaşar Mühendislik Günleri Kayıt Formu' link='https://forms.gle/3F1S8jiMEFjCDzQx7'/>
 
           <LinkToNavigate title='Instagram' link='https://www.instagram.com/yu.muhendisliktoplulugu/'/>
 
