@@ -11,7 +11,7 @@ import 'react-slideshow-image/dist/styles.css'
 import GitGithub101 from '../Assets/GitGithub101.jpg'
 import kadınlarGünü from '../Assets/kadınlarGünü.jpg'
 import otomasyon from '../Assets/otomasyon.jpg'
-import İHA from '../Assets/İHA.jpg'
+import iha from '../Assets/iha.jpg'
 const slideImages =  [
   {
     url: kadınlarGünü,
@@ -33,9 +33,9 @@ const slideImages =  [
     caption: 'Etkinlik 3'
   },
   {
-    url: İHA,
+    url: iha,
     headerText: 'Savaşan İHA 101 "Yaşardan Teknofeste" ',
-    date: "13.03.2024",
+    date: "15.03.2024",
     caption: 'Etkinlik 3'
   }
 ]
