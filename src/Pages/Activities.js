@@ -8,6 +8,15 @@ import BackButton from "../Components/BackButton";
 
 import { Slide } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css'
+import GitGithub101 from '../Assets/GitGithub101.jpg'
+const slideImages =  [
+  {
+    url: GitGithub101,
+    headerText: 'Git-Github 101',
+    date: "11.03.2024",
+    caption: 'Etkinlik 1'
+  }
+]
 
 /*const slideImages = [
     {
@@ -98,8 +107,8 @@ export default function()
                     <div className="activ_header">
                         <h1>ETKİNLİKLERİMİZ</h1>
                     </div>
-                    <p style={{fontSize:"15px"}}>ÇOK YAKINDA SİZLERLE</p>
-{/*                     
+                    
+{                    
                     <div className={`${window.innerWidth > 600 ? "activ_activities_container_browser" : 'activ_activities_container_mobile'}`}>
                         <Slide transitionDuration={500} >
                             {slideImages.map((slideImage, index) => 
@@ -108,7 +117,7 @@ export default function()
                             )
                             )}     
                         </Slide>
-                    </div> */}
+                    </div> }
 
                 </div>
             </div>
